@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    font-family: Roboto,Helvetica Neue,Arial;
+    background-color: #d1fa64;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 100px;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+.logo{
+    height: fit-content;
+    margin-right: 5.2rem;
+    margin-left: 5rem;
+    width: 6rem;
+}
+
+img{
+    height: 72px;
+    width: 70px;
+    vertical-align: middle;
+}
+
+.marca-logo{
+    margin-left: -47rem;
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.25rem;
+    color: red;
+    max-width: 211px;
+}
+
+.header-tabs{
+    margin-right: -40rem;
+    display: flex;
+    padding-right: 5rem;
+    align-items: center;
+}
+
+.tab{
+    align-items: center;
+    padding: 1rem;
+   
+}
+
+.user-and-cart{
+    flex: 1;
+    display: flex;
+    max-width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-right: 3rem;
+}
+
+.icon1, .icon2{
+    height: 20px;
+    width: 50px;
+}
+
+.hero-container{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    background: url(../../../imagenes/gorroceleste.jpg);
+}
+
+.hero-text{
+    text-align: center;
+}
+
+.beneficios-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    background-color: skyblue;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    font-size: 2rem;
+}
+
+.beneficios-grid{
+    display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 250px));
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.beneficios-grid-element{
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4/3;
+    transition: 150ms;
+}
+
+.container-slider{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin-left: 38%;
+    overflow: hidden;
+}
+
+.sliders{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section{
+    width: calc(500%/5);
+}
+
+
+.slider-section img{
+     background: linear-gradient(#000000ad, #000000be);
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right{
+    display: flex;
+    position: absolute;
+
+}
+
+.btn-left{
+    margin-top: -9rem;
+    left: 40rem;
+}
+
+.btn-right{
+    margin-top: -9rem;
+    right: 37rem;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    background-color: gray;
+    color: wheat;
+}
+
+.clientes{
+    background-color:  #67dc9a;
+    text-align: center;
+}
+
+footer{
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    background-color: black;
+    color: white;
+}
+
+.footer-upper{
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.25rem;
+
+}
+
+.footer-info-container{
+    flex: 1;
+    max-width: 743px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 220px;
+}
+
+.foot-lower{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    box-sizing: content-box;
+}
+
+.nuevas-gorras-container{
+    text-align: center;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: -3.5rem;
+}
+
+.section-titles h3{
+    color: blue;
+}
+
+h3{
+    font-size: 1.424rem;
+    font-weight: 300
+}
+
+h1{
+    font-weight: 700;
+    font-size: 1.802rem;
+}
+
+.cap-gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 250px));
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #ef78ed;
+}
+
+.gallery-element{
+    height: 100%;
+    background-color: var(--secondary);
+    cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4/3;
+    transition: 150ms;
+}
+
+button{
+    color: var(--white);
+    font-size: 1.15rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 24px;
+    cursor: pointer
+}
+
+button:hover{
+    background-color: #ef78ed;
+    transition: background-color 200ms;
+}
